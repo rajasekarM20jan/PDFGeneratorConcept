@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/activity_margin_50dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <!--CUSTOM TOOL BAR-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightestGrey"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_margin_10dp"
+                android:background="@color/lightestGrey"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/fvrHomeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/home" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/next" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Authorization Letter"
+                    android:textSize="@dimen/activity_margin_16dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:background="@color/white">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/activity_margin_10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="@dimen/activity_margin_150dp"
+                            android:layout_height="@dimen/activity_margin_100dp"
+                            android:layout_marginEnd="@dimen/activity_margin_20dp"
+                            android:src="@drawable/star_logo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Star Health and Allied Insurance Co.Ltd."
+                            android:textColor="@color/app_theme"
+                            android:textSize="@dimen/activity_margin_16dp" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/activity_margin_10dp"
+                        android:text="Sri Balaji Complex, 1st floor, No: 15, Whites Road, Royapettah, Chennai - 600 014. Toll Free No: 1800 425 2255 | Toll Free Fax: 1800 425 5522, www.starhealth.in"
+                        android:textSize="@dimen/activity_margin_14dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/activity_margin_10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="To"
+                                android:textSize="@dimen/activity_margin_14dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|end">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/activity_margin_20dp"
+                                android:text="23-08-2023"
+                                android:textSize="@dimen/activity_margin_14dp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/activity_margin_250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/activity_margin_10dp"
+                        android:text="The Medical Superintendent  Apollo Hospitals Bannerghatta 154, 11, Bannerghatta Main Rd, Krishnaraju Layout, Amalodbhavi Nagar, Bengaluru, Karnataka 560076"
+                        android:textSize="@dimen/activity_margin_14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/activity_margin_10dp"
+                        android:text="Sir/Madam,"
+                        android:textColor="@color/app_theme"
+                        android:textSize="@dimen/activity_margin_16dp" />
+
+                    <!--FIRST ROW-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/activity_margin_10dp"
+                        android:orientation="horizontal">
+
+
+                        <!--INTIMATION NUMBER-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Intimation No."
+                                android:textColor="@color/shimmer_button" />
+
+                            <EditText
+                                android:id="@+id/authIntimationNo"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/activity_margin_50dp"
+                                android:layout_marginStart="@dimen/activity_margin_5dp"
+                                android:layout_marginTop="@dimen/activity_margin_10dp"
+                                android:layout_marginEnd="@dimen/activity_margin_15dp"
+                                android:autofillHints="name"
+                                android:background="@drawable/edit_text_grey"
+                                android:hint="Enter Intimation No"
+                                android:maxLength="30"
+                                android:paddingStart="@dimen/activity_margin_10dp"
+                                android:textSize="@dimen/activity_margin_14dp"
+                                tools:ignore="RtlSymmetry" />
+
+
+                        </LinearLayout>
+
+                        <!--UHID NO /IP NO-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="UHID NO/IP No."
+                                android:textColor="@color/shimmer_button" />
+
+                            <EditText
+                                android:id="@+id/authUHIDNo"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/activity_margin_50dp"
+                                android:layout_marginStart="@dimen/activity_margin_5dp"
+                                android:layout_marginTop="@dimen/activity_margin_10dp"
+                                android:layout_marginEnd="@dimen/activity_margin_15dp"
+                                android:autofillHints="name"
+                                android:background="@drawable/edit_text_grey"
+                                android:hint="Enter UHID NO/IP No"
+                                android:maxLength="30"
+                                android:paddingStart="@dimen/activity_margin_10dp"
+                                android:textSize="@dimen/activity_margin_14dp"
+                                tools:ignore="RtlSymmetry" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <!--SECOND ROW-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/activity_margin_10dp"
+                        android:layout_marginTop="@dimen/activity_margin_10dp"
+                        android:orientation="horizontal">
+
+
+                        <!--DATE OF ADMISSION-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Date of Admission"
+                                android:textColor="@color/shimmer_button" />
+
+                            <EditText
+                                android:id="@+id/authDateOfAdmission"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/activity_margin_50dp"
+                                android:layout_marginStart="@dimen/activity_margin_5dp"
+                                android:layout_marginTop="@dimen/activity_margin_10dp"
+                                android:layout_marginEnd="@dimen/activity_margin_15dp"
+                                android:autofillHints="name"
+                                android:background="@drawable/edit_text_grey"
+                                android:hint="Date of Admission"
+                                android:maxLength="30"
+                                android:paddingStart="@dimen/activity_margin_10dp"
+                                android:textSize="@dimen/activity_margin_14dp"
+                                tools:ignore="RtlSymmetry" />
+
+
+                        </LinearLayout>
+
+                        <!--DATE OF DISCHARGE-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Date of Discharge"
+                                android:textColor="@color/shimmer_button" />
+
+                            <EditText
+                                android:id="@+id/authDateOfDischarge"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/activity_margin_50dp"
+                                android:layout_marginStart="@dimen/activity_margin_5dp"
+                                android:layout_marginTop="@dimen/activity_margin_10dp"
+                                android:layout_marginEnd="@dimen/activity_margin_15dp"
+                                android:autofillHints="name"
+                                android:background="@drawable/edit_text_grey"
+                                android:hint="Date of Discharge"
+                                android:maxLength="30"
+                                android:paddingStart="@dimen/activity_margin_10dp"
+                                android:textSize="@dimen/activity_margin_14dp"
+                                tools:ignore="RtlSymmetry" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <!--THIRD ROW-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/activity_margin_10dp"
+                        android:layout_marginTop="@dimen/activity_margin_10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Policy Number"
+                            android:textColor="@color/shimmer_button" />
+
+                        <EditText
+                            android:id="@+id/authPolicyNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/activity_margin_50dp"
+                            android:layout_marginStart="@dimen/activity_margin_5dp"
+                            android:layout_marginTop="@dimen/activity_margin_10dp"
+                            android:layout_marginEnd="@dimen/activity_margin_15dp"
+                            android:autofillHints="name"
+                            android:background="@drawable/edit_text_grey"
+                            android:hint="Enter Policy Number"
+                            android:maxLength="30"
+                            android:paddingStart="@dimen/activity_margin_10dp"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            tools:ignore="RtlSymmetry" />
+                    </LinearLayout>
+
+                    <!--FOURTH ROW-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/activity_margin_10dp"
+                        android:layout_marginTop="@dimen/activity_margin_10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Patient Name"
+                            android:textColor="@color/shimmer_button" />
+
+                        <EditText
+                            android:id="@+id/authPatientName"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/activity_margin_50dp"
+                            android:layout_marginStart="@dimen/activity_margin_5dp"
+                            android:layout_marginTop="@dimen/activity_margin_10dp"
+                            android:layout_marginEnd="@dimen/activity_margin_15dp"
+                            android:autofillHints="name"
+                            android:background="@drawable/edit_text_grey"
+                            android:hint="Enter Patient Name"
+                            android:maxLength="30"
+                            android:paddingStart="@dimen/activity_margin_10dp"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            tools:ignore="RtlSymmetry" />
+                    </LinearLayout>
+
+                    <!--FIFTH ROW-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/activity_margin_10dp"
+                        android:layout_marginTop="@dimen/activity_margin_10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Age (in years)"
+                            android:textColor="@color/shimmer_button" />
+
+                        <EditText
+                            android:id="@+id/authAge"
+                            android:layout_width="@dimen/activity_margin_150dp"
+                            android:layout_height="@dimen/activity_margin_50dp"
+                            android:layout_marginStart="@dimen/activity_margin_5dp"
+                            android:layout_marginTop="@dimen/activity_margin_10dp"
+                            android:layout_marginEnd="@dimen/activity_margin_15dp"
+                            android:autofillHints="name"
+                            android:background="@drawable/edit_text_grey"
+                            android:hint="Age"
+                            android:maxLength="30"
+                            android:paddingStart="@dimen/activity_margin_10dp"
+                            android:textSize="@dimen/activity_margin_14dp"
+                            tools:ignore="RtlSymmetry" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/activity_margin_10dp"
+                        android:layout_marginTop="@dimen/activity_margin_20dp"
+                        android:text="The above insured patient, Who have undergone / is undergoing treatment in your hospital for the above aligment has lodge a claim with us under the above policy."
+                        android:textColor="@color/app_theme"
+                        android:textSize="@dimen/activity_margin_14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/activity_margin_10dp"
+                        android:layout_marginTop="@dimen/activity_margin_10dp"
+                        android:text="We have entrusted the case to our below mentioned Field Visit Officer to verify the claim in all its details"
+                        android:textColor="@color/app_theme"
+                        android:textSize="@dimen/activity_margin_14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/activity_margin_10dp"
+                        android:layout_marginTop="@dimen/activity_margin_10dp"
+                        android:text="We therefore request you to kindly permit our FVO to access the hospital records related to the above tretment and to furnish him copies of such records which may be requested by him."
+                        android:textColor="@color/app_theme"
+                        android:textSize="@dimen/activity_margin_14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/activity_margin_10dp"
+                        android:layout_marginTop="@dimen/activity_margin_10dp"
+                        android:text="Please allow our FVO to do the initial processing work. He/She may be allowed to interact with the patient / relative and verify insurance papers with the client and basic hospital admission/ investigation and treatment records / Copy of indoor case papers/procedure details thereby facilitating the claim processing/Cashless approval."
+                        android:textColor="@color/app_theme"
+                        android:textSize="@dimen/activity_margin_14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/activity_margin_10dp"
+                        android:layout_marginTop="@dimen/activity_margin_10dp"
+                        android:text="We request you to extend your co-operation and give all the assistance."
+                        android:textColor="@color/app_theme"
+                        android:textSize="@dimen/activity_margin_14dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/activity_margin_10dp"
+                        android:layout_marginTop="@dimen/activity_margin_20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginEnd="@dimen/activity_margin_20dp"
+                            android:layout_marginBottom="@dimen/activity_margin_10dp"
+                            android:text="Thank You,\nYours faithfully,"
+                            android:textColor="@color/app_theme"
+                            android:textSize="@dimen/activity_margin_16dp" />
+
+
+                        <ImageView
+                            android:layout_width="@dimen/activity_margin_120dp"
+                            android:layout_height="@dimen/activity_margin_120dp"
+                            android:src="@drawable/star_stamp" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/activity_margin_10dp"
+                        android:layout_marginTop="@dimen/activity_margin_10dp"
+                        android:text="For\n Start Heath and Allied Insurance.Co.Ltd"
+                        android:textColor="@color/app_theme"
+                        android:textSize="@dimen/activity_margin_14dp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/activity_margin_150dp"
+                        android:layout_height="@dimen/activity_margin_100dp"
+                        android:layout_marginHorizontal="@dimen/activity_margin_10dp"
+                        android:layout_marginTop="@dimen/activity_margin_20dp"
+                        android:src="@drawable/kiran_sign"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/activity_margin_10dp"
+                        android:layout_marginTop="@dimen/activity_margin_10dp"
+                        android:text="Dr. Kiran Balmohan.\nSenior General Manager"
+                        android:textColor="@color/app_theme"
+                        android:textSize="@dimen/activity_margin_14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/activity_margin_10dp"
+                        android:layout_marginTop="@dimen/activity_margin_10dp"
+                        android:text="cc: Anand Pre live Test"
+                        android:textColor="@color/app_theme"
+                        android:textSize="@dimen/activity_margin_14dp" />
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/activity_margin_10dp"
+                        android:layout_marginTop="@dimen/activity_margin_10dp"
+                        android:text="STAR HEALTH AND ALLIED INSURANCE CO.LTD Mobile No 9986533158"
+                        android:textColor="@color/app_theme"
+                        android:layout_marginBottom="@dimen/activity_margin_40dp"
+                        android:textSize="@dimen/activity_margin_14dp" />
+
+
+                </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_margin_50dp"
+        android:background="@color/shimmer_button"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topLayout">
+
+        <LinearLayout
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Download"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/activity_margin_18dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
