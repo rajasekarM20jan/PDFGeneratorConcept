@@ -504,9 +504,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="@dimen/activity_margin_10dp"
                         android:layout_marginTop="@dimen/activity_margin_10dp"
+                        android:layout_marginBottom="@dimen/activity_margin_15dp"
                         android:text="STAR HEALTH AND ALLIED INSURANCE CO.LTD Mobile No 9986533158"
                         android:textColor="@color/app_theme"
-                        android:layout_marginBottom="@dimen/activity_margin_40dp"
                         android:textSize="@dimen/activity_margin_14dp" />
 
 

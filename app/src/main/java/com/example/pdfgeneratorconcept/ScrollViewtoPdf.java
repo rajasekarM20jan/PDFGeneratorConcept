@@ -35,7 +35,7 @@ public class ScrollViewtoPdf {
 
 
         // Calculate the number of pages based on the scroll view's content height
-        int pageHeight = scrollViewHeight; // A4 page height in points
+        int pageHeight = (842*2)+(842/2); // A4 page height in points
         int pageCount = (int) Math.ceil((float) scrollViewHeight / pageHeight);
 
 
